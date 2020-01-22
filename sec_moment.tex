@@ -1,0 +1,101 @@
+\section{The second moment of the MQ NMR spectrum of the system of equivalent spins in the nanopore}
+\label{sec:second_moment}
+
+Generally speaking, the MQ NMR signal $G(\tau, \phi)$ of Eq. (\ref{eq:signal}) is not an out-of-time-ordered correlator (OTOC) \cite{otoc_to_enanglement_via_mqcoh} because it contains different matrices $\rho_\mathrm{LT}(\tau)$ and $\rho_\mathrm{HT}(\tau)$. The signal is an OTOC only in the high temperature approximation when $G(\tau, \phi)$ can be represented as
+
+\begin{equation}
+    \label{eq:otoc_HT}
+    G(\tau, \phi) = \frac b Z\mathrm{Tr}\left\{ 
+    e^{i \phi I_z} 
+    \rho_\mathrm{HT} (\tau) 
+    e^{-i \phi I_z} 
+    \rho_\mathrm{HT}(\tau) 
+    \right\}.
+\end{equation}
+At the same time, we can generalize the signal $G(\tau, \phi)$ of Eq. (\ref{eq:signal}) that it reduces to OTOC at arbitrary temperatures. For this end, one should average the signal after three periods of the MQ NMR experiment \cite{mq_nmr_experiment} over the initial low-temperature density matrix of Eq. (\ref{eq:rho_eq}).
+
+Then 
+\begin{multline}
+    \label{eq:otoc_LT}
+    G_\mathrm{LT}(\tau, \phi) = \\
+  \mathrm{Tr}\left\{ 
+        e^{i H_{\mathrm{MQ}} \tau} 
+        e^{i \phi I_z} 
+        e^{-i H_{\mathrm{MQ}} \tau} 
+        \rho_{\mathrm{eq}}
+        e^{i H_{\mathrm{MQ}}}
+        e^{-i \phi I_z} 
+        e^{-i H_{\mathrm{MQ}} \tau} 
+        \rho_{\mathrm{eq}}
+     \right\} = \\
+   \mathrm{Tr}\left\{
+         e^{i \phi I_z} 
+         e^{-i H_\mathrm{MQ} \tau} 
+         \rho_\mathrm{eq} 
+         e^{i H_\mathrm{MQ} \tau} 
+         e^{-i \phi I_z} 
+         e^{-i H_\mathrm{MQ} \tau} 
+         \rho_{\mathrm{eq}}
+         e^{i H_\mathrm{MQ} \tau} 
+     \right\} = \\
+   \mathrm{Tr}\left\{ 
+         e^{i \phi I_z} 
+         \rho_\mathrm{LT} (\tau) 
+         e^{-i \phi I_z} 
+         \rho_\mathrm{LT} (\tau) 
+     \right\}.
+\end{multline}
+It is evident from Eq. (\ref{eq:otoc_LT}) that $G_\mathrm{LT}(\tau, \phi)$ is OTOC at arbitrary temperatures.
+
+The normalized intensities of the MQ NMR coherences for the correlator of Eq. (\ref{eq:otoc_LT}) can be written as 
+
+\begin{equation}
+    \label{eq:j_lt}
+    J_{\mathrm{LT}, n}(\tau) = 
+    \frac{\mathrm{Tr} \left\{ 
+        \rho_{\mathrm{LT},n}(\tau)
+        \rho_{\mathrm{LT}, -n}(\tau)
+    \right\}}
+    {\mathrm{Tr}\left\{\rho^2_\mathrm{eq}\right\}},             
+\end{equation}
+and a simple calculation yields
+
+\begin{equation}
+    \label{eq:j_lt_norm}
+  \mathrm{Tr}\left\{\rho^2_\mathrm{eq}\right\} = 
+    \frac{2^N \cosh^N(b)}{Z^2}.
+\end{equation}
+We call the coherences of Eq. ~(\ref{eq:j_lt}) the reduced multiple coherences.
+
+In particular, the intensities of the reduced MQ NMR coherences for a system of $N=3$ spins are 
+\begin{align}
+    \label{eq:j_lt_3}
+    J_{\mathrm{LT}, 0}(\tau) & = 1 - \frac 1 2 \tanh^2(b)\sin^2(\sqrt 3 D \tau), \notag \\
+    J_{\mathrm{LT},\pm 2}(\tau) & = \frac 1 4 \tanh^2(b)\sin^2(\sqrt 3 D \tau)
+\end{align}
+
+The sum of the intensities of Eq. ~(\ref{eq:j_lt_3}) is again 1, as in the previous section~(\ref{sec:exact_sol}). However, the normalized intensities of Eq. ~(\ref{eq:j_lt_3})  depend now on the temperature, although the intensities of Eq. ~(\ref{eq:analit_res_coherence}) do not manifest such dependence. This is very important for the further analysis.
+
+The second moment (dispersion) $M_2(\tau)$ of the distribution of the  reduced MQ NMR coherences $J_{LT, n} (\tau)$ can be expressed \cite{growrh_of_mqcoh} as
+
+\begin{equation}
+    \label{eq:dispersion}
+    M_2(\tau) = \sum\limits_n n^2 J_{LT, n} (\tau).
+\end{equation}
+
+It was shown \cite{otoc_to_enanglement_via_mqcoh} that $2M_2(\tau)$ of Eq. (\ref{eq:dispersion}) determines a lower bound on the quantum Fisher information $F_{Q}$ \cite{qmetrology_for_qinfo,qmetrology_nonclassiscal_state} and $2M_2(\tau) \leq N^2$ \cite{fisher_and_entanglement}.
+The numerical calculations presented in the following Section confirm this inequality.
+\par
+We give now a definition of many-particle entanglement  \cite{fisher_and_entanglement}. 
+A pure state is $k$-particle entangled, if it can be written as a product \mbox{$\left| \Psi_\mathrm{k-ent} \right\rangle = \otimes^M_{l=1} \left| \Psi_l \right\rangle$}, where $\left| \Psi_l \right\rangle$ is a state of $N_l$ particles \mbox{($\sum\limits_{l=1}^M N_l = N$)}, each  $\left| \Psi_l \right\rangle$ does not factorize, and the maximal $N_l \geq k$. A generalisation for mixed states is straightforward \cite{fisher_and_entanglement}.
+It was also ascertained \cite{qmetrology_for_qinfo,qmetrology_nonclassiscal_state} that, if
+
+\begin{equation}
+    \label{eq:fisher_criteria}
+    F_{\mathrm{Q}} > mk^2 + (N-mk)^2,
+\end{equation}
+where $m$ is the integer part of $N/k$, then we have a $(k+1)$-particle entangled state in the system \cite{qmetrology_for_qinfo,qmetrology_nonclassiscal_state}.
+
+Thus, we obtain a possibility to study the many-particle entanglement in a system of spin-carrying molecules (atoms) coupled with the DDIs in a nanopore.
+The temperature dependence of the many-particle entanglement can also be investigated. 
+At high temperatures, the intensities of the MQ NMR coherences can be investigated experimentally with usual MQ NMR experiments \cite{mq_nmr_experiment}. The results of the numerical analysis of the many-particle entanglement in the system of spin-carrying molecules (atoms) are presented in the following section.

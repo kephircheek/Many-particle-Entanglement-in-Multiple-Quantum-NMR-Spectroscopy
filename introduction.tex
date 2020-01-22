@@ -1,0 +1,37 @@
+\section{Introduction}
+Multiple quantum (MQ) NMR spectroscopy \cite{mq_nmr_experiment} was introduced for the investigation of nuclear spin distributions in various materials (liquid crystals \cite{spin_distribution_in_liquid_system}, simple organic systems \cite{mq_nmr_experiment}, amorphous hydrogenated silicon \cite{spin_distribution_in_silicon}, etc.). 
+It also turned out to be useful for probing the decoherence rate in highly correlated spin clusters \cite{decoherence_register,decoherence_ca_f2}. 
+The scaling of the decoherence rate with the number of the correlated spins has also been demonstrated \cite{decoherence_register,lab:decoherence_2018}. 
+Essentially, the MQ NMR dynamics is a suitable method to quantify the development of MQ coherences starting from the $z$-polarisation and ending with a collective state of all spins. 
+The method allows us to describe the spreading of correlations \cite{mq_nmr_experiment,spin_distribution_in_liquid_system,decoherence_under_dq,nmr_dyn} and offers a signature of localisation effects \cite{loc_deloc_nmr_dyn,loc_in_chain}. The spreading rate can be described through out-of-time ordered correlations (OTOCs) which are connected with the distribution of MQ NMR coherences. 
+\par
+Attempts to quantify entanglement are motivated by the
+desire to understand and quantify resources responsible for
+advantages  of quantum computing over classical computing.
+Pair entanglement is the most familiar while many-particle entanglement is its most general extension.
+The existing applications of  MQ NMR to quantum information make it important to understand many-particle entanglement in the MQ NMR context.  
+The starting point of such investigation must be the simplest model with non-trivial behavior. This is the motivation of the present work.
+\par
+Connections between MQ coherences and entanglement have been established only for spin pairs \cite{lab:entanglement_dyn_2003,entanglement_dyn,nuclear_polarization_and_entanglement}.  The same is true for the MQ coherences as a witness of entanglement \cite{sep_of_mixed_states}. The MQ NMR coherence of the second order was used for the construction of an entanglement witness for a two-spin system with the dipole-dipole interactions (DDIs) \cite{lab:entanglement_witness_nmr_2008,lab:mq_mnr_qinfo_2012}. At the same time, MQ NMR dynamics allows us to clarify deeper connections between MQ coherences and entanglement. Those connections are closely related to the spread of MQ correlations inside a many-spin system in the evolution process. As a result, it is possible to extract information about many-qubit entanglement and entanglement witnesses from the second moment of the intensity spectrum of the MQ NMR coherences \cite{otoc_to_enanglement_via_mqcoh}. It is also important that there is a relationship between the second moment of MQ NMR coherences and the quantum Fisher information \cite{qmetrology_for_qinfo,qmetrology_nonclassiscal_state}. In particular, it was shown that the second moment of the MQ NMR spectrum provides a lower bound on the quantum Fisher information \cite{otoc_to_enanglement_via_mqcoh}.
+\par
+In order to investigate many-spin entanglement it is necessary to work out a model of interacting spins, in which many-spin dynamics can be studied at low temperatures. 
+It is also important that the model contains a sufficiently large number of spins and is applicable at arbitrary temperatures.
+Only then it is possible to investigate many-spin entanglement and its dependence on the temperature.
+\par
+One would think that MQ NMR in one-dimensional systems is most suitable for the investigation of many-spin entanglement because a consistent quantum-mechanical theory of MQ NMR dynamics has been developed only for one-dimensional systems \cite{lab:nmr_dyn_1996,lab:mq_nmr_in_chain_1997,lab:mq_dyn_of_chain_in_solid_2000}. However, this is not the case. The point is that the exact solutions for MQ NMR dynamics of one-dimensional systems demonstrate \cite{lab:nmr_dyn_1996,lab:mq_nmr_in_chain_1997,lab:mq_dyn_of_chain_in_solid_2000} that, starting from a thermodynamic equilibrium state, only zero and double quantum coherences are produced in the approximation of the nearest neighbour interactions. As a result, the second moment (dispersion) of the MQ NMR spectrum is small and many-qubit entanglement does not appear.
+\par
+For the investigation of many-qubit entanglement, we build on the model \cite{nanopore_model} of a non-spherical nanopore filled with a gas of spin-carrying atoms (for example, xenon) or molecules in a strong external magnetic field. 
+It is well known that the dipole-dipole interactions (DDIs) of spin-carrying atoms (molecules) in such nanopores do not average out to zero due to molecular diffusion \cite{nanopore_model,lab:depolar_in_nanocavities_2004}. 
+It is very significant that the residual averaged DDIs are determined by only one coupling constant, which is the same for all pairs of interacting spins \cite{nanopore_model,lab:depolar_in_nanocavities_2004}. 
+This means that essentially we have a system of equivalent spins and its MQ NMR dynamics can be investigated exactly \cite{lab:mq_nmr_dyn_in_nanopores_2009}.
+For this model OTOCs allow the investigation of many-particle entanglement, and the extraction of information about the number of the entangled spins during the system evolution. 
+The temperature dependence of the number of the entangled spins can be also investigated.
+We discover that the system exhibits $k$-spin entanglement with $k$ growing as the temperature decreases. 
+Almost all spins are entangled at low temperatures despite the absence of  entanglement in the initial state. We expect this behavior to be generic for MQ NMR.
+\par
+The existing theoretical approach \cite{lab:mq_nmr_dyn_in_nanopores_2009} to the MQ NMR dynamics of a system of equivalent spins is valid only in the high-temperature region. In order to investigate the many-qubit entanglement, we develop a theory of the MQ NMR dynamics of equivalent spins at low temperatures. 
+We perform all calculations for a system of 201 spins. 
+Such an investigation of many-spin entanglement is performed for the first time.
+In principle, analogous calculations can be performed for  systems with several thousand  spins. 
+\par
+The present paper investigates the connection of the second moment of the MQ NMR spectrum of spin-carrying atoms (molecules) in a nanopore with many-spin entanglement in the system. The paper is organised as follows. In Sec. \ref{sec:mq_dyn} the theory of MQ NMR dynamics at low temperatures in the system of equivalent spins coupled by the DDIs is developed. An analytical solution for the MQ NMR dynamics of a three-spin system is obtained in Sec. \ref{sec:exact_sol}. The second moment (dispersion) of the MQ NMR spectrum of the system of equivalent spins in a nanopore at arbitrary temperatures is obtained in Sec. \ref{sec:second_moment}. The investigation of the dependence of  many-spin entanglement on the temperature is given in Sec. \ref{sec:entanglement}. We briefly summarise our results in the concluding Sec. \ref{sec:conslusions}.
