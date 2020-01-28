@@ -1,28 +1,13 @@
-
-\documentclass[%
- reprint,
-superscriptaddress,
-%groupedaddress,
-%unsortedaddress,
-%runinaddress,
-%frontmatterverbose, 
-%preprint,
-%preprintnumbers,
-%nofootinbib,
-%nobibnotes,
-%bibnotes,
- amsmath,amssymb,
- %aps,
- %pra,
-%prb,
-%rmp,
-%prstab,
-%prstper,
-%floatfix,
-]{revtex4-2}
-
+\documentclass[
+    pra,  
+    twocolumn, 
+    floatfix, 
+    amsmath, 
+    amssymb, 
+    superscriptaddress
+]{revtex4-1}
 \usepackage{graphicx}% Include figure files
-\usepackage{dcolumn}% Align table columns on decimal point
+%\usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
@@ -691,84 +676,8 @@ This work was performed as a part of the state task, state registration No.0089-
 \end{acknowledgments}
 
 %\input{appendix.tex}
-%\bibliographystyle{apsrev4-2}
-%\bibliography{reference}
-\begin{thebibliography}{31}
-\bibitem{mq_nmr_experiment}
-   J. Baum, M. Munowitz, A. N. Garroway, and A. Pines, The Journal of Chemical Physics {\bf 83}, 2015 (1985).
-\bibitem{spin_distribution_in_liquid_system}
-    J. Baum and A. Pines, Journal of the American Chemical Society {\bf 108}, 7447 (1986).
-\bibitem{spin_distribution_in_silicon}
-    J. Baum, K. K. Gleason, A. Pines, A. N. Garroway, and J. A. Reimer, Phys. Rev. Lett. {\bf 56}, 1377 (1986).
-\bibitem{decoherence_register}
-    H. G. Krojanski and D. Suter, Phys. Rev. Lett. {\bf 93}, 090501 (2004).
-\bibitem{decoherence_ca_f2}
-    H. J. Cho, P. Cappellaro, D. G. Cory, and C. Ramanathan, Phys. Rev. B {\bf 74}, 224434 (2006).
-\bibitem{lab:decoherence_2018}
-    G. A. Bochkin, E. B. Fel'dman, S. G. Vasil'ev, and V. I. Volkov, Applied Magnetic Resonance {\bf 49}, 25 (2018).
-\bibitem{decoherence_under_dq}
-    C. M. S{\'a}nchez, R. H. Acosta, P. R. Levstein, H. M.
-    Pastawski, and A. K. Chattah, Phys. Rev. A {\bf 90}, 042122
-    (2014).
-\bibitem{nmr_dyn}
-    M. Munowitz, A. Pines, and M. Mehring, The Journal of
-    Chemical Physics {\bf 86}, 3172 (1987).
-\bibitem{loc_deloc_nmr_dyn}
-    G. A. {\'A}lvarez, D .Suter, and R .Kaiser ,Science {\bf 349}, 846 (2015).
-\bibitem{loc_in_chain}
-    K. X. Wei, C. Ramanathan, and P. Cappellaro, Phys.
-    Rev. Lett. {\bf 120}, 070501 (2018).
-\bibitem{lab:entanglement_dyn_2003}
-    S. I. Doronin, Phys. Rev. A {\bf 68}, 052306 (2003).
-\bibitem{entanglement_dyn}
-    G. B. Furman, V. M. Meerovich, and V. L. Sokolovsky,
-    Phys. Rev. A {\bf 78}, 042301 (2008).
-\bibitem{nuclear_polarization_and_entanglement}
-    G. B. Furman, V. M. Meerovich, and V. L. Sokolovsky,
-    Quantum Information Processing {\bf 8}, 283 (2009).
-\bibitem{sep_of_mixed_states}
-    M. Horodecki, P. Horodecki, and R. Horodecki, Physics
-    Letters A 223, {\bf 1} (1996).
-\bibitem{lab:entanglement_witness_nmr_2008}
-    E. B. Fel'dman and A. N. Pyrkov, JETP Letters {\bf 88}, 398
-    (2008).
-\bibitem{lab:mq_mnr_qinfo_2012}
-    E. B. Fel'dman, A. N. Pyrkov, and A. I. Zenchuk, Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences {\bf 370}, 4690 (2012).
-\bibitem{otoc_to_enanglement_via_mqcoh}
-    M. G{\"a}rttner, P. Hauke, and A. M. Rey, Phys. Rev. Lett. {\bf 120}, 040402 (2018).
-\bibitem{qmetrology_for_qinfo}
-    G. T{\'o}thand I. Apellaniz, Journal of Physics A: Mathe- matical and Theoretical 47, 424006 (2014).
-\bibitem{qmetrology_nonclassiscal_state}
-    L. Pezz{\'e}, A. Smerzi, M. K. Oberthaler, R. Schmied, and P. Treutlein, Rev. Mod. Phys. 90, 035005 (2018).
-\bibitem{lab:nmr_dyn_1996}
-    E. B. Fel'dman and S. Lacelle, Chemical Physics Letters {\bf 253}, 27 (1996).
-\bibitem{lab:mq_nmr_in_chain_1997}
-    E. B. Fel'dman and S. Lacelle, The Journal of Chemical Physics {\bf 107}, 7067 (1997).
-\bibitem{lab:mq_dyn_of_chain_in_solid_2000}
-    S. I. Doronin, I. I. Maksimov, and E. B. Fel'dman, Jour- nal of Experimental and Theoretical Physics {\bf 91}, 597 (2000).
-\bibitem{nanopore_model}
-    J. Baugh, A. Kleinhammes, D. Han, Q. Wang, and Y. Wu, Science {\bf 294}, 1505 (2001).
-\bibitem{lab:depolar_in_nanocavities_2004}
-    E. B. Fel’dman and M. G. Rudavets, Journal of Experi- mental and Theoretical Physics {\bf 98}, 207 (2004).
-\bibitem{lab:mq_nmr_dyn_in_nanopores_2009}
-    S.I.Doronin,A.V.Fedorova,E.B.Fel’dman,andA.I. Zenchuk, The Journal of Chemical Physics {\bf 131}, 104109 (2009).
-\bibitem{Goldman}
-    M. Goldman, Spin temperature and nuclear magnetic res- onance in solids (Oxford: Clarendon Press., 1970).
-\bibitem{lab:low_temp_dyn_1997}
-    E. B. Fel’dman and S. Lacelle, The Journal of Chemical
-    Physics {\bf 106}, 6768 (1997).
-\bibitem{Landau}
-    L. Landau and E. M. Lifshitz, Quantum Mechanics:
-    Non-Relativistic Theory (Pergamon, 1977).
-\bibitem{growrh_of_mqcoh}
-    A. Khitrin, Chemical Physics Letters {\bf 274}, 217 (1997).
-\bibitem{fisher_and_entanglement}
-    P. Hyllus, W. Laskowski, R. Krischek, C. Schwemmer,
-    W. Wieczorek, H. Weinfurter, L. Pezz ́e, and A. Smerzi,
-    Phys. Rev. A {\bf 85}, 022321 (2012).
-\bibitem{HOU2017863}
-    S.-Y. Hou, H. Li, and G.-L. Long, Science Bulletin 62,
-    {\bf 863} (2017). 
-\end{thebibliography}
+\bibliographystyle{apsrev4-1}
+\bibliography{reference}
+
 
 \end{document}
